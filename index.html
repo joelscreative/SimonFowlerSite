@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang='en'>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Simon Fowler Portfolio</title>
+
+    <!-- STYLES -->
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+    <link rel="stylesheet" type="text/css" href="assets/css/bootstrap-drawer.css">
+
+
+    <link rel="stylesheet" href="assets/css/styles.css">
+
+    <link type="text/css" rel="stylesheet" href="assets/css/featherlight.css" />
+
+    <link type="text/css" rel="stylesheet" href="assets/css/lb-inline.css" />
+
+    <link type="text/css" rel="stylesheet" href="assets/css/featherlight.gallery.css" />
+
+    <link href="assets/css/lightgallery.css" rel="stylesheet">
+
+
+    <!-- FONTS -->
+
+    <link href="https://fonts.googleapis.com/css?family=Yanone+Kaffeesatz:200|Raleway|Wire+One" rel="stylesheet">
+
+</head>
+
+<body class="has-drawer">
+ 
+
+    <!-- Brand -->
+    <div class="row">
+        <div class="navbar-brand col-xs-12 col-sm-4 col-md-3 col-lg-3">
+            <a href="#" class="simon-fowler">
+                SIMON FOWLER
+            </a>
+        </div>
+    </div>
+
+    <!-- Sidebar -->
+    
+        <div id="drawerExample" class="drawer drawer-right dw-xs-10 dw-sm-6 dw-md-4 fold" aria-labelledby="drawerExample">
+        <div class="drawer-controls">
+            <a href="#drawerExample" data-toggle="drawer" aria-foldedopen="false" aria-controls="drawerExample" class="triforce" onclick="rotate()">
+                    <svg width="17px" height="15px" viewBox="0 0 17 15" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                        <!-- Generator: Sketch 43.2 (39069) - http://www.bohemiancoding.com/sketch -->
+                        <g id="Top-Page" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                            <g id="Desktop-HD" transform="translate(-1409.000000, -27.000000)" stroke-width="1.5" stroke="#D8D8D8">
+                                <g id="navbar">
+                                    <g id="menu" transform="translate(1395.000000, 0.000000)">
+                                        <g id="menu-collapse">
+                                            <polygon id="" points="22.5 29 29 41 16 41"></polygon>
+                                        </g>
+                                    </g>
+                                </g>
+                            </g>
+                        </g>
+                    </svg>
+                </a>
+        </div>
+        <div class="drawer-contents">
+            <!-- <div class="drawer-heading">
+                <h2 class="drawer-title">Menu</h2>
+            </div> -->
+            <!-- <div class="drawer-body">
+                <p>
+                    This is a properly padded container for content in the
+                    drawer that isn't a navigation.
+                </p>
+            </div> -->
+            <ul class="drawer-nav">
+                <li role="presentation" class="active"><a href="#">Home</a></li>
+                <li role="presentation"><a href="#">Profile</a></li>
+                <li role="presentation"><a href="#">Messages</a></li>
+            </ul>
+            <div class="drawer-footer">
+                <small>&copy; Simon Fowler</small>
+            </div>
+        </div>
+    </div>
+        <!-- <div class="panel-body" style="padding-left: 10%">
+
+        </div> -->
+    </div>
+
+
+    <!-- Page content -->
+
+        <section class="top">
+            <div class="carousel slide carousel-fade" data-ride="carousel row">
+
+                <!-- Wrapper for slides -->
+                <div class="carousel-inner" role="listbox">
+                    <div class="item active">
+                    </div>
+                    <div class="item">
+                    </div>
+                    <div class="item">
+                    </div>
+                </div>
+             </div>
+        </section>
+        
+        <section class="quote">
+            <div class="quote row">
+                <blockquote class="blockquote razor">&ldquo;.&nbsp;.&nbsp;.seeking the razors edge of inspiration&rdquo;</blockquote>
+            </div>
+        </section>
+
+        <section class="masonry"></section>
+        <section class="statement"></section>
+        <section class="aboutprint"></section>
+        <section class="clients"></section>
+        <section class="exhibitions"></section>
+        <section class="instagrid"></section>
+
+    <!--  SCRIPTS --> 
+        <script src="https://code.jquery.com/jquery-1.9.1.min.js" integrity="sha256-wS9gmOZBqsqWxgIVgA8Y9WcQOa7PgSIX+rPA0VL2rbQ=" crossorigin="anonymous">
+        </script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+        <!-- <script src='assets/js/jquery-3.2.1.min.js'></script> -->
+        <script src='assets/js/drawer.js'></script>
+
+        <!-- SMOOTHSCROLL JQ -->
+
+            <script>
+                    jQuery(document).ready(function($) {
+                        $(".scroll").click(function(event) {
+                            event.preventDefault();
+                            $('html,body').animate({
+                                scrollTop: $(this.hash).offset().top
+                            }, 500);
+                        });
+                    });
+            </script>
+         
+         <!-- CAROUSEL -->   
+            <script>
+                $('.carousel').carousel({
+                    interval: 8000
+                });
+                </script>
+         
+         <!-- MENU ICON -->   
+            <script>
+                var angle = 0;
+                    function rotate() {
+                      angle += 180;
+                      $('.triforce').css({
+                        'transform': 'rotate(' + angle + 'deg)'                        
+                      });
+                    }
+            </script>
+
+</body>
+</html>
