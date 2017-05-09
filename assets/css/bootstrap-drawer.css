@@ -108,6 +108,8 @@ body.has-drawer {
 .drawer-fullnav li {
   position: relative;
   margin-bottom: 5px;
+  font-family: 'Raleway', sans-serif;
+  letter-spacing: .5em;
 }
 .drawer-nav li a, .drawer-fullnav li a {
     color: #777;
